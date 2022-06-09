@@ -7,12 +7,12 @@ export function Coordnates(props: { coords: { lat: number; lon: number } }) {
   return (
     <CoordsText>
       {props.coords.lat && props.coords.lon
-        ? `Current location is set.`
-        : "Current location is not set."}
+        ? `La ubicación está configurada.`
+        : "La ubicación no está configurada."}
       {showingCoords && ` (${props.coords.lat}, ${props.coords.lon})`}
       {props.coords.lat && props.coords.lon ? (
         <ShowButton onClick={() => setShowingCoords(!showingCoords)}>
-          {showingCoords ? "Hide" : "Show"}
+          {showingCoords ? "Ocultar" : "Visualizar"}
         </ShowButton>
       ) : (
         <></>
