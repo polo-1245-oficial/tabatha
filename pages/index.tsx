@@ -11,13 +11,13 @@ import { Weather } from "../types/Weather";
 import { getUsersGeolocation } from "../utils/geolocation";
 
 const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
+  "Domingo",
+  "Lunes",
+  "Martes",
+  "Miércoles",
+  "Jueves",
+  "Viernes",
+  "Sábado",
 ];
 
 function getTemperatureEnabled(): boolean {
@@ -44,12 +44,12 @@ function getTemperatureUnit(): "F" | "C" {
 function getTimeMessage(date?: Date): string {
   if (!date) date = new Date();
   return date.getHours() >= 12 && date.getHours() < 20
-    ? "Good afternoon."
+    ? "Buenas tardes."
     : date.getHours() >= 20 || date.getHours() < 4
-    ? "Good night."
+    ? "Buenas noches."
     : date.getHours() < 12
-    ? "Good morning."
-    : "Good evening.";
+    ? "Buenos dias."
+    : "Buenas noches.";
 }
 
 let tempTimeout;
