@@ -1,12 +1,12 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Tabatha",
   "version": "0.1.8",
-  "author": "Dustin Rouillard",
+  "author": "Dustin Rouillard & Traducción por Polo_1245",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "description": "Sleek & dark new tab replacement",
+  "description": "Reemplazo de nueva pestaña elegante y oscura",
   "icons": {
     "48": "assets/icon48.png",
     "96": "assets/icon96.png"
