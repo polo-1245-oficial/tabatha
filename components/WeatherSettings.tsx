@@ -46,7 +46,7 @@ export default function WeatherSettings({
           </LeftSection>
           <RightSection>
             <ToggleButton onClick={(e) => updateGeolocation()} blue>
-              Find me
+              Encuentrame
             </ToggleButton>
           </RightSection>
         </SetLocation>
