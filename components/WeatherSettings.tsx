@@ -46,7 +46,7 @@ export default function WeatherSettings({
           </LeftSection>
           <RightSection>
             <ToggleButton onClick={(e) => updateGeolocation()} blue>
-              Encuentrame
+              Búscame
             </ToggleButton>
           </RightSection>
         </SetLocation>
@@ -64,7 +64,7 @@ export default function WeatherSettings({
         </TemperatureUnit>
         <ToggleTemperature>
           <OptionTitle>
-            {temperatureEnabled ? "Off" : "On"} Temperature
+            {temperatureEnabled ? "Apagar" : "Activar"} la temperatura
           </OptionTitle>
           <RightSection>
             <ToggleButton
