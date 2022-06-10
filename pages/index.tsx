@@ -149,7 +149,7 @@ export default function Home() {
       )}
       <Container>
         <Head>
-          <title>Tabatha • Nueva Pestaña</title>
+          <title>Nueva Pestaña</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Content>
