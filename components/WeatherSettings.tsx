@@ -33,13 +33,13 @@ export default function WeatherSettings({
   return (
     <Container>
       <Heading>
-        <HeadingText>Weather Settings</HeadingText>
+        <HeadingText>Configuración del tiempo</HeadingText>
         <CloseButton onClick={closeMenu}>X</CloseButton>
       </Heading>
       <Sections>
         <SetLocation>
           <LeftSection>
-            <OptionTitle>Current Location</OptionTitle>
+            <OptionTitle>Localización actual</OptionTitle>
             <OptionSubtitle>
               <Coordnates coords={coords} />
             </OptionSubtitle>
@@ -51,7 +51,7 @@ export default function WeatherSettings({
           </RightSection>
         </SetLocation>
         <TemperatureUnit>
-          <OptionTitle>Temperature Unit</OptionTitle>
+          <OptionTitle>Unidad de temperatura</OptionTitle>
           <RightSection>
             <UnitOptions
               value={tempUnit}
@@ -64,7 +64,7 @@ export default function WeatherSettings({
         </TemperatureUnit>
         <ToggleTemperature>
           <OptionTitle>
-            {temperatureEnabled ? "Disable" : "Enable"} Temperature
+            {temperatureEnabled ? "Off" : "On"} Temperature
           </OptionTitle>
           <RightSection>
             <ToggleButton
@@ -72,7 +72,7 @@ export default function WeatherSettings({
               red={temperatureEnabled}
               blue={!temperatureEnabled}
             >
-              {temperatureEnabled ? "Disable" : "Enable"}
+              {temperatureEnabled ? "Off" : "On"}
             </ToggleButton>
           </RightSection>
         </ToggleTemperature>
