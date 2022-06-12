@@ -44,12 +44,12 @@ function getTemperatureUnit(): "F" | "C" {
 function getTimeMessage(date?: Date): string {
   if (!date) date = new Date();
   return date.getHours() >= 12 && date.getHours() < 20
-    ? "Buenas tardes."
+    ? "🌄 Buenas tardes."
     : date.getHours() >= 20 || date.getHours() < 4
-    ? "Buenas noches."
+    ? "🌙 Buenas noches."
     : date.getHours() < 12
-    ? "Buenos días."
-    : "Buenas noches.";
+    ? "☀Buenos días."
+    : "🌙 Buenas noches.";
 }
 
 let tempTimeout;
