@@ -48,7 +48,7 @@ function getTimeMessage(date?: Date): string {
     : date.getHours() >= 20 || date.getHours() < 4
     ? "🌙 Buenas noches."
     : date.getHours() < 12
-    ? "☀Buenos días."
+    ? "☀ Buenos días."
     : "🌙 Buenas noches.";
 }
 
