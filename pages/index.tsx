@@ -150,7 +150,6 @@ export default function Home() {
       <Container>
         <Head>
           <title>Nueva Pestaña</title>
-          <link rel="icon" href="/favicon.ico" />
         </Head>
         <Content>
           <NoSSR>
@@ -174,7 +173,7 @@ export default function Home() {
               <Title>{greeting}</Title>
             </ContentHeading>
             <ContentBody right>
-              <CurrentDate>{date}</CurrentDate> <Seperator>•</Seperator>{" "}
+              <CurrentDate>{date}</CurrentDate> <Seperator>|</Seperator>{" "}
               <Time>{time}</Time>
             </ContentBody>
           </BottomRightContent>
